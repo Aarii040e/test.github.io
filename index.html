@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    id="metaDescription"
+    name="description"
+    content="Biblioteca interna de tips de ciberseguridad de Copreci."
+  >
+  <title>Inicio · Tips de Ciberseguridad</title>
+  <link rel="stylesheet" href="dependencias/styles.css">
+</head>
+
+<body>
+  <div class="top-line"></div>
+
+  <header>
+    <div class="brand">
+      <img
+        src="https://copreci.sharepoint.com/:i:/r/BRANDING/00-LOGOS%20%26%20FONTS/03-LOGO/PNG/Copreci-logo-white.png?csf=1&amp;web=1&amp;e=10ntFD"
+        alt="Copreci S. Coop."
+      >
+      <p id="brandSubtitle"></p>
+    </div>
+
+    <div class="header-right">
+      <p class="header-label" id="headerLabel"></p>
+
+      <div class="ui-language" aria-label="Idioma de la interfaz">
+        <button type="button" class="ui-lang-btn" data-ui-lang="es">ES</button>
+        <button type="button" class="ui-lang-btn" data-ui-lang="en">EN</button>
+        <button type="button" class="ui-lang-btn" data-ui-lang="eu">EU</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <h2 class="nav-title" id="navTitle"></h2>
+      <input class="search" id="searchInput" type="search">
+
+      <nav id="sideNav" aria-label="Navegación de tips"></nav>
+    </aside>
+
+    <main>
+      <section class="intro">
+        <h1 id="introTitle"></h1>
+        <p id="introText"></p>
+      </section>
+
+      <section class="quick-grid" id="quickGrid"></section>
+
+      <section class="viewer">
+        <div class="viewer-toolbar">
+          <div class="viewer-title">
+            <strong id="viewerTitle"></strong>
+            <small id="viewerMeta"></small>
+          </div>
+          <a class="open-link" id="openLink" href="#" target="_blank" rel="noopener"></a>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <h2 id="emptyTitle"></h2>
+          <p id="emptyText"></p>
+        </div>
+
+        <iframe id="viewerFrame" title="Visor de tip"></iframe>
+      </section>
+    </main>
+  </div>
+
+  <footer id="footerText"></footer>
+
+  <script src="dependencias/textos.js"></script>
+  <script src="dependencias/app.js"></script>
+</body>
+</html>
